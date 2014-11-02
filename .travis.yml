@@ -1,12 +1,4 @@
-env:
-  matrix:
-    - RAKE_TASK=spec
 language: ruby
-matrix:
-  # documentation coverage is not influenced by ruby implementation, so only run once
-  include:
-    - rvm: 2.0.0
-      env: RAKE_TASK=yard
 before_install:
 - gem install bundler
 rvm:
@@ -21,6 +13,3 @@ notifications:
 addons:
   code_climate:
     repo_token: d3c658d7a806da5a99ce2efe84628b8657f463a77d857419dda4c8d71b07dec9
-env:
-  global:
-    secure: Y1vGaM4YGdOaXToOB0zf7quq3e0Lwd/dVGJp0OXm0xdeZkKaTGBafo/u92/Flx9ahXHvp13bd64A8+jafAnS9FDy6sdmXuoZ+92IwogeL0mJNcNsgdNDhTqe6U+dz5tu6kAAGtzTF82D0chHw2dIMeuSiqcpppH8roXuhpuxMCM=
