@@ -20,4 +20,9 @@ Gem::Specification.new do |s|
   s.add_dependency 'rails', '~> 4.1.6'
 
   s.add_development_dependency 'sqlite3'
+  s.add_development_dependency 'rspec', '~> 3.1'
+  s.add_development_dependency 'simplecov'
+  s.add_development_dependency 'metasploit-yard', '~> 1.0'
+  s.add_development_dependency 'codeclimate-test-reporter'
+  s.add_development_dependency 'coveralls'
 end
