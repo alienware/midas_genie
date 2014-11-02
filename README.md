@@ -6,6 +6,8 @@ This project rocks and uses MIT-LICENSE.
 
 [![Build Status](https://travis-ci.org/alienware/midas_genie.svg?branch=master)](https://travis-ci.org/alienware/midas_genie)
 
+[![Coverage Status](https://coveralls.io/repos/alienware/midas_genie/badge.png?branch=master)](https://coveralls.io/r/alienware/midas_genie?branch=master)
+
 [![Code Climate](https://codeclimate.com/github/alienware/midas_genie/badges/gpa.svg)](https://codeclimate.com/github/alienware/midas_genie)
 
 [![Test Coverage](https://codeclimate.com/github/alienware/midas_genie/badges/coverage.svg)](https://codeclimate.com/github/alienware/midas_genie)
