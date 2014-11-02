@@ -1,6 +1,7 @@
 # require before anything else so coverage is shown for all project files
 require 'simplecov'
 require 'codeclimate-test-reporter'
+require 'coveralls'
 
 if ENV['TRAVIS'] == 'true'
   formatters = []
