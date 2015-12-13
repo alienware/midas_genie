@@ -2,6 +2,7 @@
 require 'simplecov'
 require 'codeclimate-test-reporter'
 require 'coveralls'
+require 'database_cleaner'
 
 if ENV['TRAVIS'] == 'true'
   formatters = []
@@ -108,4 +109,14 @@ RSpec.configure do |config|
   # as the one that triggered the failure.
   Kernel.srand config.seed
 =end
+  config.before do
+    DatabaseCleaner.strategy = :truncation
+  end
+
+  config.around(:each) do |example|
+    DatabaseCleaner.cleaning do
+      example.run
+    end
+  end
+
 end

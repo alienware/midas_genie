@@ -2,12 +2,12 @@ language: ruby
 before_install:
 - gem install bundler
 rvm:
-- 2.0.0
+- 2.2.3
 script: bundle exec rake
 notifications:
   email:
     recipients:
-    - tanay@genii.in
+    - tanayupadhyaya@gmail.com
     on_failure: change
     on_success: never
 addons:
