@@ -2,7 +2,6 @@ require 'rails_helper'
 
 module MidasGenie
   describe Option do
-
     describe '# Associations' do
       it { should belong_to(:midas_question) }
     end

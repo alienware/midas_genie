@@ -1,0 +1,134 @@
+{
+  "RSpec": {
+    "coverage": {
+      "/Users/alienone/work/midas_genie/spec/dummy/config/environment.rb": [
+        null,
+        1,
+        null,
+        null,
+        1
+      ],
+      "/Users/alienone/work/midas_genie/spec/dummy/config/environments/development.rb": [
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        null,
+        null,
+        1,
+        null,
+        null,
+        1,
+        1,
+        null,
+        null,
+        1,
+        null,
+        null,
+        1,
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        null
+      ],
+      "/Users/alienone/work/midas_genie/spec/dummy/config/initializers/assets.rb": [
+        null,
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        null
+      ],
+      "/Users/alienone/work/midas_genie/spec/dummy/config/initializers/backtrace_silencers.rb": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "/Users/alienone/work/midas_genie/spec/dummy/config/initializers/cookies_serializer.rb": [
+        null,
+        null,
+        1
+      ],
+      "/Users/alienone/work/midas_genie/spec/dummy/config/initializers/filter_parameter_logging.rb": [
+        null,
+        null,
+        null,
+        1
+      ],
+      "/Users/alienone/work/midas_genie/spec/dummy/config/initializers/inflections.rb": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "/Users/alienone/work/midas_genie/spec/dummy/config/initializers/mime_types.rb": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "/Users/alienone/work/midas_genie/spec/dummy/config/initializers/session_store.rb": [
+        null,
+        null,
+        1
+      ],
+      "/Users/alienone/work/midas_genie/spec/dummy/config/initializers/wrap_parameters.rb": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        0,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "/Users/alienone/work/midas_genie/spec/dummy/config/routes.rb": [
+        1,
+        null,
+        1,
+        null
+      ]
+    },
+    "timestamp": 1450036743
+  }
+}

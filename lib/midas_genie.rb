@@ -1,4 +1,4 @@
-require "midas_genie/engine"
+require 'midas_genie/engine'
 
 module MidasGenie
 end
