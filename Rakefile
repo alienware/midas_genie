@@ -27,6 +27,10 @@ task default: :spec
 
 task 'db:test:prepare'
 
+require 'rubocop/rake_task'
+
+RuboCop::RakeTask.new
+
 # Use find_all_by_name instead of find_by_name as find_all_by_name will return pre-release versions
 gem_specification = Gem::Specification.find_all_by_name('metasploit-yard').first
 

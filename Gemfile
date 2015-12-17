@@ -1,4 +1,4 @@
-source "https://rubygems.org"
+source 'https://rubygems.org'
 
 # Declare your gem's dependencies in midas_genie.gemspec.
 # Bundler will treat runtime dependencies like base dependencies, and

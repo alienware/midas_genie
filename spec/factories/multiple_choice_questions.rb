@@ -3,7 +3,7 @@ FactoryGirl.define do
     type 'MidasGenie::MultipleChoiceQuestion'
 
     trait :with_options do
-      ignore do
+      transient do
         number_of_options 10
       end
 
