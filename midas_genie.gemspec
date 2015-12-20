@@ -19,6 +19,8 @@ Gem::Specification.new do |s|
 
   s.add_dependency 'rails', '~> 4.2.5'
   s.add_dependency 'paranoia', '~> 2.0'
+  s.add_dependency 'acts_as_list'
+  s.add_dependency 'counter_culture', '~> 0.1.33'
 
   s.add_development_dependency 'sqlite3'
   s.add_development_dependency 'rspec-rails', '~> 3.0'
@@ -34,4 +36,7 @@ Gem::Specification.new do |s|
   s.add_development_dependency 'rspec-collection_matchers'
   s.add_development_dependency 'rubocop'
   s.add_development_dependency 'guard-rubocop'
+  s.add_development_dependency 'annotate'
+  s.add_development_dependency 'awesome_print'
+  s.add_development_dependency 'faker'
 end
