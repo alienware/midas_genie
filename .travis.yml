@@ -4,16 +4,16 @@ before_install:
 rvm:
 - 2.2.3
 script:
-  - RAILS_ENV=test bundle exec rake db:migrate --trace
-  - bundle exec rake db:test:prepare
-  - bundle exec rspec spec/
-  - bundle exec rake rubocop
+- RAILS_ENV=test bundle exec rake db:migrate --trace
+- bundle exec rake db:test:prepare
+- bundle exec rspec spec/
+- bundle exec rake rubocop
 notifications:
   email:
     recipients:
     - tanayupadhyaya@gmail.com
     on_failure: change
     on_success: never
-addons:
-  code_climate:
-    repo_token: d3c658d7a806da5a99ce2efe84628b8657f463a77d857419dda4c8d71b07dec9
+env:
+  global:
+    secure: V7rVlxpga2MwEhr1f0IqfqNql+TpgFZzoLKTh+kVdkghZczpOJTc/OnvaYrXySaitNKG8SSIS4/3U+iXERpE2sf67a/Q7iA2tWX0r6FcJ2uR6sAYNp4k2P9Qt/YtOuTcj3ANSd+cnJq933rRt8L3+5WgsdQHAZtULC68WhpBUPg=
