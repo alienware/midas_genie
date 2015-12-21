@@ -4,9 +4,9 @@ This project rocks and uses MIT-LICENSE.
 
 [![Gem Version](https://badge.fury.io/rb/midas_genie.svg)](http://badge.fury.io/rb/midas_genie)
 
-[![Build Status](https://travis-ci.org/alienware/midas_genie.svg?branch=tdd%2Fsurvey)](https://travis-ci.org/alienware/midas_genie)
+[![Build Status](https://travis-ci.org/alienware/midas_genie.svg?branch=master)](https://travis-ci.org/alienware/midas_genie)
 
-[![Coverage Status](https://coveralls.io/repos/alienware/midas_genie/badge.svg?branch=tdd%2Fsurvey&service=github)](https://coveralls.io/github/alienware/midas_genie?branch=tdd%2Fsurvey)
+[![Coverage Status](https://coveralls.io/repos/alienware/midas_genie/badge.svg?branch=master&service=github)](https://coveralls.io/github/alienware/midas_genie?branch=master)
 
 [![Code Climate](https://codeclimate.com/github/alienware/midas_genie/badges/gpa.svg)](https://codeclimate.com/github/alienware/midas_genie)
 
