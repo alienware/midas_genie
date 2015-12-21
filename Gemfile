@@ -12,3 +12,4 @@ gemspec
 
 # To use debugger
 # gem 'debugger'
+gem 'acts_as_list', git: 'git://github.com/swanandp/acts_as_list.git'

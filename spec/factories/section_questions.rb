@@ -7,6 +7,10 @@ FactoryGirl.define do
       transient do
         position 1
       end
+
+      before(:create) do |section_question, evaluator|
+        section_question.position = evaluator.position
+      end
     end
   end
 end
