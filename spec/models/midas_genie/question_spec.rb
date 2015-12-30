@@ -18,7 +18,9 @@ module MidasGenie
   describe Question do
     describe '# Associations' do
       it { should have_many(:midas_section_questions) }
+      it { should have_many(:midas_survey_section_questions) }
       it { should have_many(:midas_sections).through(:midas_section_questions) }
+      it { should have_many(:midas_survey_sections).through(:midas_survey_section_questions) }
     end
 
     describe '# Validations' do
