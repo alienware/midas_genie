@@ -20,6 +20,8 @@ module MidasGenie
 
     has_many :midas_section_questions, dependent: :destroy, class_name: 'MidasGenie::SectionQuestion'
     has_many :midas_sections, through: :midas_section_questions
+    has_many :midas_survey_section_questions, dependent: :destroy, class_name: 'MidasGenie::SurveySectionQuestion'
+    has_many :midas_survey_sections, through: :midas_survey_section_questions
 
     validates_presence_of :title, :type
     validates_inclusion_of :type, in: %w{MidasGenie::SingleChoiceQuestion MidasGenie::MultipleChoiceQuestion MidasGenie::NumericalQuestion MidasGenie::ShortTextualQuestion MidasGenie::LongTextualQuestion MidasGenie::DateTimeQuestion}

@@ -4,7 +4,8 @@ class CreateMidasGenieSurveySections < ActiveRecord::Migration
       t.references :survey, index: true
       t.references :section, index: true
       t.datetime :deleted_at, index: true
-      t.integer :postition, index: true
+      t.integer :position, index: true
+      t.integer :survey_section_questions_count, null: false, default: 0
 
       t.timestamps null: false
     end

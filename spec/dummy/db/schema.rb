@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151219074346) do
+ActiveRecord::Schema.define(version: 20151229200936) do
 
   create_table "midas_genie_options", force: :cascade do |t|
     t.text     "title",       null: false
@@ -68,17 +68,32 @@ ActiveRecord::Schema.define(version: 20151219074346) do
   add_index "midas_genie_sections", ["deleted_at"], name: "index_midas_genie_sections_on_deleted_at"
   add_index "midas_genie_sections", ["title"], name: "index_midas_genie_sections_on_title"
 
+  create_table "midas_genie_survey_section_questions", force: :cascade do |t|
+    t.integer  "survey_section_id"
+    t.integer  "question_id"
+    t.datetime "deleted_at"
+    t.integer  "position"
+    t.datetime "created_at",        null: false
+    t.datetime "updated_at",        null: false
+  end
+
+  add_index "midas_genie_survey_section_questions", ["deleted_at"], name: "index_midas_genie_survey_section_questions_on_deleted_at"
+  add_index "midas_genie_survey_section_questions", ["position"], name: "index_midas_genie_survey_section_questions_on_position"
+  add_index "midas_genie_survey_section_questions", ["question_id"], name: "index_midas_genie_survey_section_questions_on_question_id"
+  add_index "midas_genie_survey_section_questions", ["survey_section_id"], name: "index_midas_genie_survey_section_questions_survey_section_id"
+
   create_table "midas_genie_survey_sections", force: :cascade do |t|
     t.integer  "survey_id"
     t.integer  "section_id"
     t.datetime "deleted_at"
-    t.integer  "postition"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.integer  "position"
+    t.integer  "survey_section_questions_count", default: 0, null: false
+    t.datetime "created_at",                                 null: false
+    t.datetime "updated_at",                                 null: false
   end
 
   add_index "midas_genie_survey_sections", ["deleted_at"], name: "index_midas_genie_survey_sections_on_deleted_at"
-  add_index "midas_genie_survey_sections", ["postition"], name: "index_midas_genie_survey_sections_on_postition"
+  add_index "midas_genie_survey_sections", ["position"], name: "index_midas_genie_survey_sections_on_position"
   add_index "midas_genie_survey_sections", ["section_id"], name: "index_midas_genie_survey_sections_on_section_id"
   add_index "midas_genie_survey_sections", ["survey_id"], name: "index_midas_genie_survey_sections_on_survey_id"
 
