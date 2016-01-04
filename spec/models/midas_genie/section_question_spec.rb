@@ -124,46 +124,6 @@ module MidasGenie
           expect(subject[3].reload.position).to eq(4)
         end
       end
-
-      # context 'question is put at an invalid position' do
-
-      #   context 'it is given a position less than 1' do
-      #     before(:example) do
-      #       section = FactoryGirl.create(:section, :with_midas_questions, number_of_questions: 3)
-      #       another_section_question = FactoryGirl.create(:section_question)
-      #       @source_section_question = section.midas_survey_section_questions[1]
-      #       @source_section_question.put_after!(another_section_question.id)
-      #     end
-
-      #     subject { @source_section_question }
-
-      #     its(:position) { should eq(1) }
-      #   end
-
-      #   context 'it is given a position more than the number of questions in the section' do
-      #     before(:example) do
-      #       section = FactoryGirl.create(:section, :with_midas_questions, number_of_questions: 3)
-      #       another_section_question = FactoryGirl.create(:section_question)
-      #       @source_section_question = section.midas_survey_section_questions[1]
-      #       @source_section_question.put_after!(another_section_question.id)
-      #     end
-
-      #     subject { @source_section_question }
-
-      #     it 'should not be valid' do
-      #       expect(subject).to_not be_valid
-      #     end
-
-      #     it 'should have an error on position' do
-      #       expect(subject).to have(1).error_on(:position)
-      #     end
-
-      #     it 'should have an error message' do
-      #       subject.valid?
-      #       expect(subject.errors.messages[:position]).to include('is out of bound')
-      #     end
-      #   end
-      # end
     end
   end
 end
